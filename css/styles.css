@@ -23,8 +23,8 @@ Tabla de contenidos:
   --light-gray: hsl(0, 0%, 75%);
 
   /* Tipografia */
-  --font-family-primary: 'Raleway', sans-serif;
-  --font-family-secondary: 'Open Sans', sans-serif;
+  --font-family-primary: 'Open Sans', sans-serif;
+  --font-family-secondary: 'Raleway', sans-serif; 
   --font-size-body: 16px;
   --font-size-subheading: 24px;
   --font-weight-regular: 400;
@@ -35,3 +35,15 @@ Tabla de contenidos:
 /* ----------------------------- */
 /* ----- Estilos generales ----- */
 /* ----------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-body);
+  color: var(--very-dark-blue);
+}
