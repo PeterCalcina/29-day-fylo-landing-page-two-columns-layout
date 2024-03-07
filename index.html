@@ -45,8 +45,8 @@
                 </p>
 
                 <div class="main__get_started">
-                    <input type="text" class="inpt_email" placeholder="Enter your email...">
-                    <button class="btn_get_started">Get Started</button>
+                    <input type="text" class="inpt_email" placeholder="Enter your email..." id="inpt_email_main">
+                    <button class="btn_get_started" id="btn_get_started" onclick="sendEmail('inpt_email_main')">Get Started</button>
                 </div>
             </div>
 
@@ -102,8 +102,8 @@
             </div>
 
             <div class="main__early_access_form">
-                <input type="text" class="inpt_email" placeholder="email@example.com">
-                <button class="btn_get_started">Get Started For Free</button>
+                <input type="text" class="inpt_email" placeholder="email@example.com" id="inpt_email">
+                <button class="btn_get_started" onclick="sendEmail('inpt_email')">Get Started For Free</button>
             </div>
 
         </section>
@@ -156,6 +156,15 @@
         </div>
 
     </footer>
+
+    <div id="toast">
+        <span class="toast_message">
+            <i id="toast_icon" class="fa-solid fa-check-circle"></i>
+            <span id="toast_text">You have been successfully subscribed</span>
+        </span>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
