@@ -163,8 +163,9 @@ nav {
 
 .main__container .main__fylo_description .main__fylo_description_text .main__get_started .inpt_email {
   width: 46%;
-  padding: .6rem 1.3rem;
+  padding: .7rem 1.3rem;
   border: 1px solid var(--desaturated-blue);
+  border-radius: 5px;
   outline: none;
 }
 
@@ -173,10 +174,12 @@ nav {
 }
 
 .main__container .main__fylo_description .main__fylo_description_text .main__get_started .btn_get_started {
-  padding: .6rem 3rem;
-  border: none;
+  padding: .7rem 3rem;
   color: var(--light-grayish-blue);
+  border: none;
+  border-radius: 5px;
   background-color: var(--bright-blue);
+  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -255,7 +258,7 @@ nav {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
-.main__container .main__fylo_security .main__fylo_security_text .main__fylo_testimonial>img {
+.main__container .main__fylo_security .main__fylo_security_text .main__fylo_testimonial > img {
   margin-bottom: 5px;
 }
 
@@ -341,8 +344,9 @@ nav {
 
 .main__container .main__early_access .main__early_access_form .inpt_email {
   width: 100%;
-  padding: .6rem 1.3rem;
+  padding: .7rem 1.3rem;
   border: 1px solid var(--desaturated-blue);
+  border-radius: 5px;
   outline: none;
 }
 
@@ -353,9 +357,11 @@ nav {
 .main__container .main__early_access .main__early_access_form .btn_get_started {
   align-self: flex-start;
   padding: .6rem 2.5rem;
-  border: none;
   color: var(--light-grayish-blue);
+  border: none;
+  border-radius: 5px;
   background-color: var(--bright-blue);
+  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -476,4 +482,289 @@ nav {
 
 #toast.warning .toast_message {
   color: var(--color-warning);
+}
+
+/* Media Queries */
+@media (width < 769px) {
+  .header__container {
+    height: 100px;
+    padding: 2rem;
+  }
+
+  .header__container .header__logo {
+    height: 25px;
+    width: 85px;
+  }
+
+  .header__container .header__nav ul {
+    display: flex;
+    gap: 0;
+  }
+
+  .header__container .header__nav ul li a {
+    padding: 5px 8px;
+    font-size: 16px;
+  }
+
+  /* General Styles */
+
+
+  .main__fylo_title {
+    width: 100%;
+    font-size: 27px;
+    text-align: center;
+  }
+
+  .main__fylo_text {
+    width: 96%;
+    font-size: 14.5px;
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+  .section__common {
+    flex-direction: column-reverse;
+    height: auto;
+    padding: 0 2rem;
+  }
+
+  /* Main Style */
+
+  .main__container {
+    padding-top: 5rem;
+  }
+
+  /* Section - Fylo-Description */
+  .main__container .main__fylo_description .main__fylo_description_text {
+    align-items: center;
+    width: 100%;
+    padding-top: 2rem;
+  }
+
+  .main__container .main__fylo_description .main__fylo_description_text .main__get_started {
+    flex-direction: column;
+    gap: 10px;
+    width: 95%;
+    padding-top: 1rem;
+  }
+
+  .main__container .main__fylo_description .main__fylo_description_text .main__get_started .inpt_email {
+    width: 100%;
+    padding: 1rem 1.3rem;
+  }
+
+  .main__container .main__fylo_description .main__fylo_description_text .main__get_started .btn_get_started {
+    padding: 1rem 3rem;
+  }
+
+  .main__container .main__fylo_description .main__fylo_description_image {
+    width: 100%;
+    height: 250px;
+    text-align: center;
+  }
+
+  /* Section Fylo-Security */
+  .main__container .main__fylo_security {
+    margin-top: 8rem;
+    padding-top: 8rem;
+    height: auto;
+    background: url('../images/bg-curve-mobile.svg') no-repeat center / cover;
+    background-size: 600% 100%;
+  }
+
+  .main__container .main__fylo_security .main__fylo_security_text {
+    padding-top: 6rem;
+    width: 100%;
+  }
+
+  .main__container .main__fylo_security .main__fylo_security_text .main__fylo_title {
+    width: 100%;
+    font-size: 17px;
+  }
+
+  .main__container .main__fylo_security .main__fylo_security_text .main__fylo_text {
+    width: 95%;
+    text-align: start;
+  }
+
+  .main__container .main__fylo_security .main__fylo_security_text .main__fylo_text:nth-child(3) {
+    padding: 0;
+    margin-top: 5px;
+  }
+
+  .main__container .main__fylo_security .main__fylo_security_text .main__fylo_works {
+    margin-top: 1rem;
+    align-self: center;
+  }
+
+  .main__container .main__fylo_security .main__fylo_security_text .main__fylo_testimonial {
+    width: 95%;
+    align-self: center;
+    margin-top: 4rem;
+    padding: 2rem 1rem 2rem 2rem;
+  }
+
+  .main__container .main__fylo_security .main__fylo_security_text .main__fylo_testimonial>img {
+    margin-bottom: 5px;
+  }
+
+  .main__container .main__fylo_security .main__fylo_security_text .main__fylo_testimonial .main__fylo_testimonial_text {
+    width: 100%;
+    font-size: 12.6px;
+  }
+
+  .main__container .main__fylo_security .main__fylo_security_text .main__fylo_testimonial .main__fylo_testimonial_author {
+    gap: 10px;
+  }
+
+  .main__container .main__fylo_security .main__fylo_security_text .main__fylo_testimonial .main__fylo_testimonial_author .main__fylo_testimonial_author_info .main__fylo_testimonial_author_name {
+    letter-spacing: .5px;
+  }
+
+  .main__container .main__fylo_security .main__fylo_security_text .main__fylo_testimonial .main__fylo_testimonial_author .main__fylo_testimonial_author_info .main__fylo_testimonial_info {
+    font-size: 10px;
+  }
+
+  .main__container .main__fylo_security .main__fylo_security_image {
+    width: 100%;
+    height: 250px;
+  }
+
+  .main__container .main__fylo_security .main__fylo_security_image img {
+    height: 100%;
+  }
+
+  /* Section - Fylo-Access */
+  .main__container .main__early_access {
+    flex-direction: column;
+    padding-inline: 2rem;
+    padding-bottom: 4rem;
+    height: auto;
+  }
+
+  .main__container .main__early_access .main__early_access_text {
+    width: 100%;
+  }
+
+  .main__container .main__early_access .main__early_access_text .main__early_title {
+    margin-bottom: 10px;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .main__container .main__early_access .main__early_access_text .main__early_text {
+    width: 95%;
+    align-self: center;
+    text-align: center;
+  }
+
+  .main__container .main__early_access .main__early_access_form {
+    margin-top: 40px;
+    align-self: center;
+    width: 80%;
+    padding-left: 0;
+  }
+
+  .main__container .main__early_access .main__early_access_form .btn_get_started {
+    padding: .7rem 3rem;
+    width: 100%
+  }
+
+  /* Footer Style */
+  .footer__container {
+    height: auto;
+    padding: 4rem 2rem;
+  }
+
+  .footer__container .footer__content_info {
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 20px;
+  }
+
+  .footer__container .footer__content_info .footer__info:nth-child(2) {
+    padding-top: 30px;
+  }
+
+  .footer__container .footer__content_info .footer__social {
+    align-self: center;
+    justify-content: space-around;
+    width: 40%;
+    margin-top: 30px;
+  }
+}
+
+@media (width < 376px) {
+  .header__container {
+    padding: 2rem;
+  }
+
+  .header__container .header__logo {
+    height: 20px;
+    width: 70px;
+  }
+
+  .header__container .header__nav ul li a {
+    padding: 5px 5px;
+    font-size: 14px;
+  }
+
+  /* General Styles */
+
+  .main__fylo_title {
+    font-size: 24px;
+  }
+
+  .main__fylo_text {
+    font-size: 14.5px;
+  }
+
+  .section__common {
+    padding: 0 2rem;
+  }
+
+  /* Main Style */
+
+  .main__container {
+    padding-top: 3rem;
+  }
+
+  /* Section - Fylo-Description */
+  .main__container .main__fylo_description .main__fylo_description_text .main__get_started {
+    gap: 10px;
+  }
+
+  .main__container .main__fylo_description .main__fylo_description_text .main__get_started .inpt_email {
+    padding: .7rem 1rem;
+  }
+
+  .main__container .main__fylo_description .main__fylo_description_text .main__get_started .btn_get_started {
+    padding: .7rem 2rem;
+  }
+
+  /* Section Fylo-Security */
+  .main__container .main__fylo_security .main__fylo_security_text .main__fylo_text {
+    font-size: 13px;
+  }
+
+  .main__container .main__fylo_security .main__fylo_security_text .main__fylo_testimonial {
+    padding: 1.5rem 1.5rem;
+  }
+
+  .main__container .main__fylo_security .main__fylo_security_text .main__fylo_testimonial .main__fylo_testimonial_text {
+    font-size: 11px;
+  }
+
+  .main__container .main__fylo_security .main__fylo_security_text .main__fylo_testimonial .main__fylo_testimonial_author .main__fylo_testimonial_author_info .main__fylo_testimonial_author_name {
+    font-size: 10;
+  }
+
+  /* Section - Fylo-Access */
+  .main__container .main__early_access .main__early_access_text .main__early_title {
+    font-size: 22px;
+  }
+
+  .main__container .main__early_access .main__early_access_text .main__early_text {
+    font-size: 15px;
+  }
 }
