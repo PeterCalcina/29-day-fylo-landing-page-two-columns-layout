@@ -692,6 +692,11 @@ nav {
     width: 40%;
     margin-top: 30px;
   }
+
+  /* Toast */
+  #toast {
+    font-size: 14px;
+  }
 }
 
 @media (width < 376px) {
@@ -766,5 +771,11 @@ nav {
 
   .main__container .main__early_access .main__early_access_text .main__early_text {
     font-size: 15px;
+  }
+
+  /* Toast */
+
+  #toast {
+    font-size: 13px;
   }
 }
